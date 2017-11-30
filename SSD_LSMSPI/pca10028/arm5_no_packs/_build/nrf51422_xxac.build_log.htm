@@ -1,0 +1,79 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.21.1.0
+Copyright (C) 2016 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: jin zhouyun, individual, LIC=14HTG-VM8T5-NM89F-6MLLC-EHBEI-0885G
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.21a
+Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 3 (build 300)
+Assembler:       Armasm.exe V5.06 update 3 (build 300)
+Linker/Locator:  ArmLink.exe V5.06 update 3 (build 300)
+Library Manager: ArmAr.exe V5.06 update 3 (build 300)
+Hex Converter:   FromElf.exe V5.06 update 3 (build 300)
+CPU DLL:         SARMCM3.DLL V5.21a
+Dialog DLL:      DARMCM1.DLL V1.14.0.0
+Target DLL:      UL2CM3.DLL V1.158.5.0
+Dialog DLL:      TARMCM1.DLL V1.10.0.0
+ 
+<h2>Project:</h2>
+D:\Upwork History\2016\11\20161115_nRF51822\nRF51SDK\examples\peripheral\spi_master\pca10028\arm5_no_packs\spi_master_pca10028.uvprojx
+Project File Date:  11/17/2016
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 3 (build 300)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
+Build target 'nrf51422_xxac'
+compiling SparkFunLSM9DS1.c...
+..\..\LSM9D\SparkFunLSM9DS1.c(341): warning:  #177-D: variable "data" was declared but never referenced
+  	uint8_t data[6] = {0, 0, 0, 0, 0, 0};
+..\..\LSM9D\SparkFunLSM9DS1.c: 1 warning, 0 errors
+compiling SFE_MicroOLED.c...
+compiling main.c...
+..\..\main.c(230): warning:  #177-D: function "spi_master_init" was declared but never referenced
+  static void spi_master_init(nrf_drv_spi_t const * p_instance, bool lsb)
+..\..\main.c(295): warning:  #177-D: function "spi_send_recv" was declared but never referenced
+  static void spi_send_recv(nrf_drv_spi_t const * p_instance,
+..\..\main.c(312): warning:  #177-D: function "switch_state" was declared but never referenced
+  static void switch_state(void)
+..\..\main.c: 3 warnings, 0 errors
+linking...
+Program Size: Code=7868 RO-data=4240 RW-data=580 ZI-data=2900  
+FromELF: creating hex file...
+".\_build\nrf51422_xxac.axf" - 0 Error(s), 4 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.4.5.0.pack
+                ARM::CMSIS:CORE:4.3.0
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 4.3.0
+
+Package Vendor: NordicSemiconductor
+                http://developer.nordicsemi.com/nRF51_SDK/pieces/nRF_DeviceFamilyPack/NordicSemiconductor.nRF_DeviceFamilyPack.8.2.0.pack
+                NordicSemiconductor::Device:Startup:8.2.0
+                Nordic Semiconductor nRF ARM devices Device Family Pack.
+   * Component: Startup Version: 8.2.0
+
+<h2>Collection of Component include folders:</h2>
+  D:\Upwork History\2016\11\20161115_nRF51822\nRF51SDK\examples\peripheral\spi_master\pca10028\arm5_no_packs\RTE
+  C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include
+  C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.2.0\Device\Include
+  C:\Keil_v5\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.9.0\Device\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:4.3.0
+
+   * Component: NordicSemiconductor::Device:Startup:8.2.0
+      Source file:   Device\Source\system_nrf51.c
+      Include file:  Device\Include\system_nrf51.h
+      Source file:   Device\Source\arm\arm_startup_nrf51.s
+Build Time Elapsed:  00:00:07
+</pre>
+</body>
+</html>
